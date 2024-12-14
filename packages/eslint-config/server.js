@@ -8,6 +8,12 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
+  ignorePatterns: [
+    // Ignore dotfiles
+    ".*.js",
+    "*.config.js",
+    "node_modules/",
+  ],
   overrides: [
     {
       files: ["**/__tests__/**/*"],
